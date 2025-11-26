@@ -1,1 +1,26 @@
+# Básico / obligado
+Flask>=2.2.0,<3.0
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+tldextract>=3.4.0
+idna>=3.3
 
+# whois (puede aparecer como "python-whois" en algunos entornos)
+python-whois>=0.7.3
+
+# BBDD ML / NLP (opcional, solo si vas a usar TF-IDF / spaCy)
+numpy>=1.24.0
+scikit-learn>=1.2.0
+spacy>=3.5.0
+
+# Backends de búsqueda (uno u otro)
+duckduckgo_search>=2.10.0    # módulo: duckduckgo_search (se intenta importar ddgs/duckduckgo_search en el código)
+googlesearch-python>=1.1.0   # módulo: googlesearch (opcional, solo si quieres usar search_gsearch)
+
+# Opcionales / utilidades
+python-dateutil>=2.8.2
+gunicorn>=20.1.0             # para desplegar en producción (opcional)
+
+# Para parsing/encoding robusto (requests suele traer lo necesario, pero no está de más)
+charset-normalizer>=3.1.0
